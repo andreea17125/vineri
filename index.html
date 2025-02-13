@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="screen1" class="screen active">
+            <img src="Group 4.png" alt="Heart" class="heart">
+            <button id="lockButton" class="lock">
+                <img src="Group 5.png" alt="Lock">
+                <p>CLICK</p>
+            </button>
+        </div>
+
+       
+        <div id="screen2" class="screen hidden">
+            <img src="Group 4.png" alt="Heart" class="heart heart-text">
+            <div class="password-container">
+                <input type="password" id="passwordInput" placeholder="Introdu parola">
+                <button id="unlockButton">deblochează</button>
+                <p class="hint">hint:o melodie pe care mi ai dedicat o</p>
+            </div>
+        </div>
+
+       
+        <div id="screen3" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="2.jpg" alt="Image 1">
+                </div>
+                <p class="page-text">
+                    HAPPY VALENTINES DAY!!!!te iubesc mai mult ca orice pe lumea asta(mai mult ca robotica),dar for sure deja stii asta,totusi e important sa ti amintesc PT CA TE IUBESC MULT OMULE,esti efectiv cel mai bun lucru care mi s a intamplat vreodata(sorry for the bad site,nu e exact proiectu vrut dar e ceva) 
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+
+        
+        <div id="screen4" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="1.jpg" alt="Image 2">
+                </div>
+                
+                <p class="page-text">
+                so as i said am vrut sa gatesc mult mai bine,dar mno olimpiada si concursurile,dar dw o sa ti dau cadoul planuit as soon as i finish it for sute u will love that more,i hope u kinda like this thing too...however sper ca astazi sa fie o zi buna chiar daca nu ne putem vedea sa stam mult hopefully duminica vom avea timp de o sarbatorire 
+                
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen5" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="3.jpg" alt="Image 3">
+                </div>
+                <p class="page-text">
+                    AGHH MAN,abia astept sa fie duminica sa ne vedem,sa stam mult impreuna,sa ne iubim mult mult,sa ne pupam multtttt pana nu mai respiram ups,anywaysss vreau picnic,gen sper sa fie okay vremea cus vreau sa stau pe tine,maybe poti aduce paturica si we can cuddleee,o sa fiu wild SI TE MUSCCC MASIVVV,las ca vezi tu
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen6" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="4.jpg" alt="Image 4">
+                </div>
+                <p class="page-text">
+                   cand stiu ca ma iubesti si ca esti alaturi de mine,ma simt cea mai fericita persoana fr,e un sentiment asa fain ,e asa sweet cand esti close to me si cand ma tii in brate,ma simt asa safe si asa loved,sau when u bitr my nose or cheek or kiss my forehead sunt in al noulea cer doamne it s so insane that i could love someone so much sincerr
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen7" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="5.jpg" alt="Image 5">
+                </div>
+                <p class="page-text">
+                vreau sa ti  multumesc ca ai grija de mine,ca imi cumperi sweets si ca te asiguri ca i eat,si chiar daca uneori exagerez undestand ca ma ingrijorez pentru ca sunt stresata ca nu cumva sa ne despartim,relatia asta means everything to me,crede ma,te iubesc prea mult si tin prea mult la tine ca sa te pierd,love me forever and be sure i ll
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen8" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="6.jpg" alt="Image 6">
+                </div>
+               
+                <p class="page-text">
+                omule stiu ca nu ti place cum arati,dar crede ma ca eu IUBESC cum arati like look at these photos sunt asa cute,crede ma ca esti perfect,i love ur body and ur face,vreau sa te musc,sa te mananc,U RE KILLING ME TE IUBESCCCCC,cand o sa locuim impreuna o sa fiu freaky 24/7,o sa te rog rogi sa scapi de mine muahaha,o sa te ating 
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen9" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="7.jpg" alt="Image 7">
+                </div>
+                <p class="page-text">
+                 i just want sa fim close like before,i want sweet vocals,sweet words,sper sa fie din nou totul ca inaitne,te rog,nu renunta vreodata la mine,nu te desparti,i have many plans for future care o sa ti placa,asa caaa wait for ur birthday,sper sa reusesc sa gatesc de data asta sincer,te iubesc mult mult mult,and theyre not just words
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen10" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="8.jpg" alt="Image 8">
+                </div>
+                <p class="page-text">
+                   of man,this thing that ive made its so baddd,im sorry,dar am fost aglomerata si i kinda forgot abt vday,sper sa ti placa macar ceva din prostia asta tho,oricum sper sa facem cat mai multe chestii de pe todo,sa fie odata vacanta aia de vara si chiar sa facem lucruile pe care ni le am propus,dar i need u,please dont make me suffer and cry
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+        <div id="screen11" class="screen hidden">
+            <button class="arrow left-arrow" onclick="prevPage()">
+                <img src="primu.png" alt="Previous">
+            </button>
+
+            <div class="page-content">
+                <div class="heart-frame">
+                    <img src="9.jpg" alt="Image 9">
+                </div>
+                <p class="page-text">
+                   i trust u with so many things,te rog nu ma fa sa mi schimb parerea,faptu ca suntem impreuna de 1 an e wow,ma bucur super mult crede ma,doar ca vreau ca in continuare sa fim okay,try to be closer like before de ex azi when u kissed me a fost super sweet,si cand m ai tinut in brate, and bite my nose which is smth new really silly 
+                </p>
+            </div>
+
+            <button class="arrow right-arrow" onclick="nextPage()">
+                <img src="doi.png" alt="Next">
+            </button>
+        </div>
+       
+<div class="music-player">
+    <div class="album-art"></div>
+    <div class="track-info">
+        <h3 class="track-title">Titlul melodiei</h3>
+        <p class="track-artist">Artistul</p>
+    </div>
+    <audio id="audio-player" src="melodie.mp3"></audio>
+    <div class="controls">
+        <button id="prev" class="control-btn">⏮</button>
+        <button id="play-pause" class="control-btn">▶</button>
+        <button id="next" class="control-btn">⏭</button>
+    </div>
+    <input type="range" id="seek-bar" value="0">
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
