@@ -1,0 +1,368 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d98a9e, #f2c0c9);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+
+.container {
+    position: relative;
+    width: 350px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(12px);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.heart-frame {
+    width: 150px;
+    height: 150px;
+    background: url('https://source.unsplash.com/300x300/?love,romance') center/cover;
+    position: relative;
+    clip-path: polygon(
+        50% 15%, 61% 6%, 75% 0, 89% 3%, 100% 15%, 100% 29%, 
+        97% 41%, 91% 53%, 83% 66%, 73% 78%, 60% 90%, 
+        50% 100%, 40% 90%, 27% 78%, 17% 66%, 9% 53%, 
+        3% 41%, 0 29%, 0 15%, 11% 3%, 25% 0, 39% 6%
+    );
+    box-shadow: 0px 5px 20px rgba(255, 0, 102, 0.5), 
+                inset 0px 0px 10px rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: 60px;
+    margin-bottom: 100px;
+    animation: heartbeat 1.5s infinite;
+}
+
+
+.heart-frame:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(255, 0, 102, 0.7),
+                inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.heart-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.1) contrast(1.1);
+}
+
+
+.page-content {
+    max-width: 280px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+   
+}
+
+
+
+
+.page-text {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.6;
+    display: flex;
+     text-align: left; 
+    position: relative;
+    top:-50px;
+
+   
+}
+
+
+.arrow {
+    position: absolute;
+    top: 60%; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+    top: 8%; 
+}
+
+.right-arrow {
+    right: 10px;
+    top: 8%;
+}
+
+
+.arrow img {
+    width: 35px;
+    opacity: 0.8;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.arrow:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+.password-container {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#passwordInput {
+    width: 220px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #333;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+#passwordInput:focus {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+
+#unlockButton {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #ff6584;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 0, 102, 0.3);
+    transition: 0.3s;
+}
+
+#unlockButton:hover {
+    background: #ff3366;
+    box-shadow: 0px 5px 20px rgba(255, 0, 102, 0.5);
+}
+
+
+.hint {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    background:#ff6080;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+
+.lock {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.lock img {
+    width: 60px;
+    transition: transform 0.3s ease-in-out, filter 0.3s;
+    filter: drop-shadow(0px 5px 10px rgba(255, 0, 102, 0.4));
+}
+
+
+.lock:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 20px rgba(255, 0, 102, 0.6));
+}
+
+
+.lock p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+
+.lock:hover p {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+}
+.music-player {
+    width: 420px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-in-out;
+    display: none;
+}
+
+.album-art {
+    width: 160px;
+    height: 160px;
+    background: url('https://source.unsplash.com/300x300/?music') center/cover;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 0px 10px 25px rgba(255, 0, 150, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.album-art:hover {
+    transform: scale(1.08);
+}
+
+.track-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 14px;
+    text-shadow: 0px 3px 12px rgba(255, 255, 255, 0.3);
+}
+
+.track-artist {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 12px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0px 0px 10px rgba(255, 0, 150, 0.6);
+}
+
+.control-btn:hover {
+    transform: scale(1.35);
+    text-shadow: 0px 0px 18px rgba(255, 0, 255, 0.8);
+}
+
+#seek-bar {
+    width: 100%;
+    height: 8px;
+    margin-top: 14px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(255, 182, 193, 0.5), rgba(255, 105, 180, 0.5));
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#seek-bar:hover {
+    background: linear-gradient(to right, rgba(255, 105, 180, 0.7), rgba(255, 182, 193, 0.7));
+}
+
+#seek-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #ff70a6;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#seek-bar::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 14px rgba(255, 105, 180, 0.8);
+}
+
+#seek-bar::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #ff70a6;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#seek-bar::-moz-range-thumb:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 14px rgba(255, 105, 180, 0.8);
+}
